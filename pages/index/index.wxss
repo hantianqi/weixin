@@ -1,0 +1,81 @@
+/**index.wxss**/
+.slider,.slider swiper,.slider image{
+  height:190px;
+  width:100%;
+}
+
+/*商品介绍*/
+.goods,.goods-body,.goods1,.coll-title,.cus-title{
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+}
+.goods-title{
+  margin:10px 0;
+  font-size:20px;
+}
+.goods1{
+  background:url("http://127.0.0.1:3000/img/index/AFEI0rQbEAQYACCpja-fBSikpoLQBTDuBTj8AkBl.png");
+  backgeound-width:100%;
+}
+.goods-img{
+  width:100%;
+  height:141px;
+}
+.goods1-title,.coll-title,.cus-title{
+  margin:10px;
+  font-size:17px;
+}
+.goods1-body{
+  margin:5px 15px;
+  font-size:15px;
+}
+
+/*搭配推荐*/
+.coll1-body,.coll2-body,.coll3-body{
+  display:flex;
+  justify-content:space-between;
+}
+.coll2-body,.coll3-body{
+  margin-top:-5px;
+}
+.coll3-body{
+  margin-bottom:-5px;
+}
+.coll1-img image{
+  width:187px;
+  height:115px;
+}
+.coll1-intr{
+  width:50%;
+  height:85px;
+  padding-top:30px;
+  background:url(http://127.0.0.1:3000/img/index/AFEI0rQbEAQYACDXkq-fBSizsv6dAjD3AjjlAUBl.png);
+  background-width:100%;
+}
+.coll1-intr text{
+  text-align: center;
+  display:block;
+}
+.coll1-title{
+  font-size:17px;
+}
+.coll1-details{
+  font-size:15px;
+  color:#aaa;
+}
+
+/*客户案例*/
+.cus-body{
+  display:flex;
+}
+.cus-img{
+  width:132px;
+  height: 89px;
+  margin:10px;
+}
+.cus-img image{
+  width:100%;
+  height:100%;
+  border-radius: 5px;
+}

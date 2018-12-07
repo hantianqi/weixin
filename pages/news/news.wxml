@@ -1,0 +1,48 @@
+<!--pages/news/news.wxml-->
+<view class='topTabSwiper'>
+    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>全部</view>
+    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>汉服咨询</view>
+    <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}'  data-current = "2" bindtap='checkCurrent'>行业动态</view>
+</view>
+<swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
+  <swiper-item>
+    <view class='swiper_con' wx:for="{{news}}" wx:key="item.id">
+      <view class="news">
+        <view class="news-body">
+          <view class="news-title">{{item.title}}</view>
+          <view class="news-deta">{{item.details}}</view>
+          <view class="news-time">{{item.time}}</view>
+        </view>
+      </view>
+      <view class="news-img"><image src="{{item.pic}}"></image></view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class='swiper_con' wx:for="{{news1}}" wx:key="item.id">
+      <view class="news">
+        <view class="news-body">
+          <view class="news-title">{{item.title}}</view>
+          <view class="news-deta">{{item.details}}</view>
+          <view class="news-time">{{item.time}}</view>
+        </view>
+      </view>
+      <view class="news-img"><image src="{{item.pic}}"></image></view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class='swiper_con' wx:for="{{news2}}" wx:key="item.id">
+      <view class="news">
+        <view class="news-body">
+          <view class="news-title">{{item.title}}</view>
+          <view class="news-deta">{{item.details}}</view>
+          <view class="news-time">{{item.time}}</view>
+        </view>
+      </view>
+      <view class="news-img"><image src="{{item.pic}}"></image></view>
+    </view>
+  </swiper-item> 
+</swiper>
+
+<view class="home" bindtap="goHome">
+  <image src="../../static/home.png"></image>
+</view>

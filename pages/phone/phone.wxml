@@ -1,0 +1,56 @@
+<!--pages/phone/phone.wxml-->
+<!--顶部图片-->
+<view class="head-img">
+  <image src="http://127.0.0.1:3000/img/phone/AFEI0rQbEAQYACDSoK-fBSj9qtSyBzDuBTiYAkBl.png"></image>
+</view>
+
+<!--灰边-->
+<view class="div-back"></view>
+
+<!--定制留言-->
+<view class="words">
+  <view class="title">- 定制留言 -</view>
+  <view class="input">
+    <view class="name">
+      姓名：
+      <input type='text' placeholder='请输入您的姓名'/>
+    </view>
+    <view class="phone">
+      电话：
+      <input type='text' placeholder='请输入您的电话'/>
+    </view>
+    <view class="ify">
+      定制分类：
+      <view class="ify-btn comment-btn">
+        <button 
+            wx:for="{{riderCommentList}}" 
+            wx:for-item="item" 
+            wx:key="item.index"  
+            bindtap="checkboxChange" 
+            data-value="{{item.value}}" 
+            data-index="{{index}}"  
+            checked="{{item.selected}}"
+            class="btn {{item.selected ? 'btn-selected' : ''}}" >
+            {{item.title}}
+        </button>
+      </view>
+    </view>
+    <view class="words-inp">
+      留言：
+      <textarea maxlength="999" placeholder='请输入您想咨询的内容'/>
+    </view>
+    <button class="click-tj">马上提交</button>
+  </view>
+</view>
+
+<!--灰边-->
+<view class="div-back"></view>
+
+<!--成品赏析-->
+<view class="appreciation">
+  <view class="title">- 成品赏析 -</view>
+  <navigator class="app-img" url="/pages/deta/deta">
+    <image src="http://127.0.0.1:3000/img/phone/AFEI0rQbEAQYACCKp6-fBSiAtYOzAzDuBTiQA0Bl.png"></image>
+  </navigator>
+  <view class="app-title">成品汉服推荐(6)</view>
+</view>

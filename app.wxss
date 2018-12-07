@@ -1,0 +1,35 @@
+/**app.wxss**/
+.div-back{
+  width:100%;
+  height:15px;
+  background:rgb(240, 240, 240);
+}
+
+.title{
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  margin:10px;
+  font-size:17px;
+}
+
+.head-img,.head-img image{
+  width:100%;
+  height:141px;
+}
+
+.pho-posit,.home{
+  background:rgba(0,0,0,0.5);
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  position:fixed;
+  right:0;
+  top:50%;
+}
+.pho-posit image,.home image{
+  width:25px;
+  height:25px;
+  padding-top:5px;
+  padding-left:5px;
+}

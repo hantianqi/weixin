@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/deta/deta",
+    "pages/news/news",
+    "pages/etc/etc",
+    "pages/phone/phone",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#EDB7BF",
+    "navigationBarTitleText": "汉服",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/000002.png",
+        "selectedIconPath": "static/0000010.png"
+      },
+      {
+        "pagePath": "pages/phone/phone",
+        "text": "咨询案例",
+        "iconPath": "static/0000052.png",
+        "selectedIconPath": "static/0000060.png"
+      },
+      {
+        "pagePath": "pages/etc/etc",
+        "text": "汉服心得",
+        "iconPath": "static/0000022.png",
+        "selectedIconPath": "static/0000030.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "关于我们",
+        "iconPath": "static/0000042.png",
+        "selectedIconPath": "static/0000050.png"
+      }
+    ]
+  }
+}

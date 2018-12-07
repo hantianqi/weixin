@@ -1,0 +1,50 @@
+<!--pages/deta/deta.wxml-->
+<view wx:for="{{banners}}"  wx:for-item="banner" wx:for-index="idx" class="view-height">
+  <view  class="head-img deta-img">
+    <image src="{{banner.img}}" />
+  </view>
+  <scroll-view scroll-x="true">
+    <view  class="deta-list">
+      <image wx:for="{{banner.imgs}}" data-idx="{{idx}}"  data-index="{{index}}"class="thumbnail {{banner.index==index?'cur':''}}" src="{{item}}"  catchtap="showBanner" />
+    </view>
+  </scroll-view>
+  <view class="tj-tit">成品汉服推荐<text> {{banner.index+1}}</text></view>
+</view> 
+
+<!--灰边-->
+<view class="div-back view-back"></view>
+
+<!--详情-->
+<view class="deta">
+  <view class="title xq-title">详情</view>
+  <view class="deta-body">
+    <text>我们始终强调传统工艺的延续性与严谨性，并认为这是民族服饰的灵魂与价值之所在；我们坚持由细节入手，从面料到剪裁，尝试理解每一部分的意义所在以求更深刻地发掘出它传统的魅力与智慧。</text>
+  </view>
+</view>
+
+<!--灰边-->
+<view class="div-back view-back"></view>
+
+<!--底部导航栏-->
+<view class="tab">
+  <view class="tab-block">
+    <image src="../../static/wx.png"></image>
+    <text>微信</text>
+  </view>
+  <view class="tab-block">
+    <image src="../../static/pho.png"></image>
+    <text>电话</text>
+  </view>
+  <view class="tab-block">
+    <image src="../../static/dz.png"></image>
+    <text>地址</text>
+  </view>
+  <view  class="tab-block">
+    <button>马上咨询</button>
+  </view>
+</view>
+
+<view class="home" bindtap="goHome">
+  <image src="../../static/home.png"></image>
+</view>
+

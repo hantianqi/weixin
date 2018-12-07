@@ -1,0 +1,32 @@
+<!--pages/profile/profile.wxml-->
+<!--顶部图片-->
+<view class="head-img">
+  <image src="http://127.0.0.1:3000/img/profile/AFEI0rQbEAQYACDvra-fBSjip52_AzDuBTiYAkBl.png"></image>
+</view>
+
+<!--灰边-->
+<view class="div-back"></view>
+
+<view class="pro-body">
+  <view class="pro-body-css">TEMPLATE创立于2007年，致力于汉族民族服饰研究这一份崭新的事业，从事着汉族民族服饰设计与制作的相关工作。
+</view>
+  <view class="pro-body-css">TEMPLATE始终强调传统工艺的延续性与严谨性，并认为这是民族服饰的灵魂与价值之所在；我们坚持由细节入手，从面料到剪裁，尝试理解每一部分的意义所在以求更深刻地发掘出它传统的魅力与智慧。</view>
+</view>
+
+<!--灰边-->
+<view class="div-back"></view>
+
+<view class="my">
+  <image src="http://127.0.0.1:3000/img/profile/AFEI0rQbEAQYACDSsq-fBSjal9XHBDBhOKQCQGU.png"></image>
+  <view>
+    <view wx:for="{{my}}" wx:key="item.id" class="my-body">
+      <view class="my-img">
+        <image src="{{item.pic}}"></image>
+      </view>
+      <view class="my-text">
+        <view>{{item.title}}</view>
+        <view>{{item.details}}</view>
+      </view>
+    </view>
+  </view>
+</view>

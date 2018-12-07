@@ -1,0 +1,65 @@
+/* pages/etc/etc.wxss */
+.hf-title{
+  display:flex;
+  justify-content: space-between;
+  padding:10px 15px;
+  font-size:17px;
+  border:1px solid rgb(240, 240, 240);
+}
+.hf-title>text+text{
+  font-size:15px;
+  color:#aaa;
+}
+
+.hf-body{
+  margin-top:10px;
+}
+.hf-body-list{
+  margin:0 20px;
+  border-bottom:1px solid rgb(240, 240, 240);
+}
+.hf-body-list view,.share1 view{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin:5px 0;
+}
+.hf-body-title{
+  font-size:17px;
+}
+.hf-body-deta{
+  font-size:15px;
+  color:#aaa;
+}
+.hf-body-time{
+  font-size:12px;
+  color:#aaa;
+}
+
+scroll-view,scroll-view view{
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+scroll-view{
+  height:200px;
+}
+scroll-view view image{
+  width:210px;
+  height:120px;
+  border-radius:10px;
+}
+.share1{
+  margin:20px;
+}
+.share1 view{
+  display:block;
+  width:210px;
+}
+.share-title{
+  font-size:17px;
+}
+.share-deta{
+  font-size:15px;
+  color:#aaa;
+}

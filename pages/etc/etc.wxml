@@ -1,0 +1,40 @@
+<!--pages/etc/etc.wxml-->
+<!--顶部图片-->
+<view class="head-img">
+  <image src="http://127.0.0.1:3000/img/etc/AFEI0rQbEAQYACDWqa-fBSjAja-aBzDuBTiYAkBl.png"></image>
+</view>
+
+<!--灰边-->
+<view class="div-back"></view>
+
+<!--汉服心得-->
+<view class="etc-hf">
+  <view class="hf-title">
+    <text>汉服心得</text> 
+    <navigator url="/pages/news/news"><text>查看全部></text></navigator>
+  </view>
+  <view class="hf-body">
+    <view class="hf-body-list" wx:for="{{etc}}" wx:key="item.id">
+      <view class="hf-body-title">{{item.title}}</view>
+      <view class="hf-body-deta">{{item.details}}</view>
+      <view class="hf-body-time">{{item.time}}</view>
+    </view>
+  </view>
+</view>
+
+<!--灰边-->
+<view class="div-back"></view>
+
+<!--心得分享-->
+<scroll-view class="share" scroll-x="true">
+  <view class="share1">
+    <image src="http://127.0.0.1:3000/img/etc/AFEI0rQbEAQYACDQq6-fBSj3ztLiBzD0Azj6AUBl.png"></image>
+    <view class="share-title">{{etc[0].title}}</view>
+    <view class="share-deta">{{etc[0].details}}</view>
+  </view>
+  <view class="share1">
+    <image src="http://127.0.0.1:3000/img/etc/AFEI0rQbEAQYACDSq6-fBSjQuq_hBjD0Azj6AUBl.png"></image>
+    <view class="share-title">{{etc[1].title}}</view>
+    <view class="share-deta">{{etc[1].details}}</view>
+  </view>
+</scroll-view>
